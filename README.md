@@ -42,7 +42,7 @@ This project uses **Exploratory Data Analysis (EDA)** and **Machine Learning (ML
 Three models were tested:  
 1. **Logistic Regression** – Accuracy ~0.63 (too weak, struggles with nonlinearities).  
 2. **Random Forest** – Accuracy ~0.79 (best overall accuracy).  
-3. **XGBoost** – Accuracy ~0.71, but **highest recall** for the minority class (*needs repair*).  
+3. **XGBoost** – Accuracy ~0.70, but **highest recall** for the minority class (*needs repair*).  
 
 **Interpretation:**  
 - Use **Random Forest** if the goal is maximum overall accuracy.  
@@ -77,18 +77,26 @@ Three models were tested:
 │   ├── raw/                      # Original raw dataset files (CSV)
 │   ├── processed/                # Cleaned or transformed datasets
 │
+
+
 ├── notebooks/                    
 │   └── notebook.ipynb            # Main Jupyter Notebook with EDA, preprocessing, modeling
+
 
 │
 ├── models/                       
 │   └── tanzania_rf_model.pkl     # Example: saved Random Forest model
 │   └── tanzania_xgb_model.pkl    # Example: saved XGBoost model
 │
+
+
+
 ├── outputs/
 │   ├── figures/                  # Plots and visualizations (EDA charts, feature importance, confusion matrix)
 │   ├── reports/                  # Generated reports or exported results
 │
+
+
 ├── requirements.txt              # Python dependencies (pandas, scikit-learn, matplotlib, etc.)
 ├── README.md                     # Project documentation (this file)
 └── Tanzania_Water_Wells_Presentation.pptx   # Final project presentation slides
